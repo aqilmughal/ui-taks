@@ -549,7 +549,7 @@
   } 
   .img{
     width: 40vw;
-    height: 50vh;
+    height: 60vh;
     padding-top: 0;
   }
 }
@@ -563,7 +563,7 @@
   }
   .img{
       width: 40vw;
-      height: 53vh;
+      height: 60vh;
       padding-top: 0;
     }
   
@@ -635,9 +635,13 @@
     padding-left: 50%;
     padding-right: 40%;
   }
+  .img{
+    width: 45vw;
+  }
   .box{
     width: 340px;
   }
+  
 }
  
 @media screen and (max-width:731px)
@@ -860,6 +864,7 @@
   }
   .img{
     width: 100vw;
+    height: 70vh;
   }
   .summer{
     width: 30vw;
@@ -881,6 +886,7 @@
   .img{
     margin: 0%;
     width: 30vw;
+    height: 50vh;
     
   }
   .buttons{
@@ -909,6 +915,7 @@
   }
   .img{
     width: 100vw;
+    width: 75vh;
   }
   .buttons{
     gap: 20px;
@@ -932,6 +939,7 @@
   } */
   .img{
     width: 100vw;
+    height: 50vh;
   }
   .row{
     display: flex;
@@ -1071,7 +1079,7 @@
   }
   .img{
     width: 100vw;
-    height: 40vh;
+    height: 50vh;
     padding-left: 3rem;
   }
 
