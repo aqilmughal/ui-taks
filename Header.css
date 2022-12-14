@@ -1071,6 +1071,7 @@
   }
   .img{
     width: 100vw;
+    height: 50vh;
     padding-left: 3rem;
   }
 
