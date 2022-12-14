@@ -36,9 +36,18 @@
   z-index: 1;
 } */
 .bar{
-  display: none;
-  z-index: 1;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    padding-right: 10px;
+    align-items: center;
 }
+
+.header-burgur
+{
+  display: none;
+}
+
 /* /* home menu  */
 .main-header {
   
@@ -70,16 +79,19 @@
   margin-top: 10%;
   /* font-family: sans-serif; */
 }
+.header-centre >h1{
+  font-size: 30px;
+  padding-top: 1rem;
+}
 /* paragraph first */
 .header-centre > p {
 
   margin-top: 1rem;
   width: 100%;
   height: 50px;
-  
   text-align: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 15px;
 }
 /* get started button */
 .header-centre > button {
@@ -97,9 +109,10 @@
   height: 50px;
 }
 /* we are best at work puri div ko set kia hwa */
-.middle > .work {
+.work {
   justify-content: center;
   text-align: center;
+  color: lightgray;
 }
 /* we are best at work */
 .work > h1 {
@@ -113,6 +126,7 @@
 .work > p {
   font-family: sans-serif;
   padding-top: 15px;
+  color: lightgray;
  
 }
 /* you conquer the world puri div */
@@ -128,8 +142,8 @@
 
 /* conquer pic */
 .img {
-  width: 25vw;
-  height: 22vh;
+  width: 20vw;
+  /* height: 15vh; */
   margin-left: 10%;
   padding: 30px;
 }
@@ -450,6 +464,7 @@
   width: 33.3%;
 }
 
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -460,42 +475,189 @@
   margin: 0%;
   width: 100%;
 }
+@media screen and (max-width:1750px){
+  .main-header{
+    display: flex;
+  }
+  .bar{
+    display: none;
+  }
+  .Header{
+    height: auto;
+  }
+
+}
 @media screen and (max-width:1680px) {
 .Header{
   height: 500px;
 }
 .img{
-  width: 30vw;
-  height: 50vh;
+  width: 35vw;
   margin: 0%;
+  padding-top: 0;
 }
 .buttons{
   gap: 20px;
 }
-
-  
+.bar{
+  display:none;
 }
+.world >button{
+  font-size: 18px;
+  width: 200px;
+  height: 50px;
+
+}
+}
+@media screen and (max-width:1550px){
+  .img{
+    width: 35vw;
+
+    padding-top: 0;
+  }
+
+
+}
+@media screen and (max-width:1400px){
+  .img{
+    width: 35vw;
+    padding-top: 0;
+  }
+
+
+}
+@media screen and (max-width:1300px){
+  .img{
+    width: 40vw;
+    padding-top: 0;
+  }
+
+
+}
+
+@media screen and (max-width:1225px)
+{
+  .header-right
+  {
+    text-align: center;
+    width:40vw;
+  }
+  .world >button{
+    font-size: 18px;
+    width: 200px;
+    height: 50px;
+  } 
+  .img{
+    width: 40vw;
+    height: 50vh;
+    padding-top: 0;
+  }
+}
+
+
+
+
 @media screen and (max-width: 992px){
   .Header{
     height: 80vh;
   }
   .img{
-    width: 30vw;
-    height: 70vh;
-    margin: 0%;
-  }
-  .header-right > a{
+      width: 40vw;
+      height: 53vh;
+      padding-top: 0;
+    }
+  
+  .header-right > a
+  {
     width: 20vw;
-    height: 10vh;
-      
   }
   .buttons{
     gap: 20px;
   }
+  .world >button{
+    font-size: 18px;
+    width: 200px;
+    height: 50px;
 
+  }
+  .boxes{
+    padding: 1rem;
+  }
+  .box >i{
+    font-size: 30px;
+    padding-bottom: 15px;
+    padding-top: 0;
+  }
+  .box >h2{
+    padding-top: 0;
+    font-size: 15px;
+  }
+  .box >p{
+    font-size: 10px;
+  }
 }
-@media screen   {
-  
+
+@media screen and (max-width:918px)
+{
+  .header-right
+  {
+    width:50vw;
+  }
+  .all{
+    border-radius: 0%;
+    background-color: maroon;
+    color: white;
+    font-size: 15px;
+    width: 50px;
+    border-radius: 30%;
+  }
+  .world >button{
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+  }
+  .img{
+    width: 40vw;
+  }
+}
+@media screen and (max-width:830px)
+{
+  .img{
+    width: 40vw;
+  }
+}
+@media screen and (max-width:780px){
+  /* *{
+    border: 1px solid red;
+  } */
+  .conquer{
+    width: 50vw;
+    padding-left: 50%;
+    padding-right: 40%;
+  }
+  .box{
+    width: 340px;
+  }
+}
+ 
+@media screen and (max-width:731px)
+{
+  .header-right
+  {
+    width:60vw;
+    gap:0;
+  }
+
+  .header-right>a
+  {
+    width:15vw;
+  }
+  .world >button{
+    font-size: 18px;
+    width: 200px;
+    height: 50px;
+
+  }
 }
 
 
@@ -509,10 +671,31 @@
   .header-right {
     display: none;
   }
-  .conquer{
+  .main-header{
+    display: none;
+  }
+  .bar{
     display: flex;
-    justify-content: center;
-    flex-direction: column;  
+    font-size: 20px;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    
+  }
+
+  .fas {
+    margin-top: 5px;
+    font-size: 30px;
+  }
+  
+  .conquer{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    margin-top: 0;
+    padding: 3rem;  
+    
+    
   }
   .all{
     width: 50px;
@@ -530,15 +713,36 @@
   }
  
   .world >button{
-    font-size: 10px;
-    width: 100px;
+    font-size: 18px;
+    width: 200px;
+    height: 50px;
 
   }
   .img{
-    width: 400px ;
+    width: 90vw ;
+    height: 80vh;
+    padding-top: 1rem;
+    padding-left: 0;
+
   }
   .boxes{
     flex-direction: column;
+    
+  }
+  .box{
+    width: 80vw;
+  }
+  .box >i{
+    font-size: 40px;
+    padding-bottom: 15px;
+    padding-top: 0;
+  }
+  .box >h2{
+    padding-top: 0;
+    font-size: 20px;
+  }
+  .box >p{
+    font-size: 15px;
   }
 
   .contact-container{
@@ -562,23 +766,121 @@
   }
   
 }
+/* @media screen and (max-width:714)
+{} */
+
+@media screen and (max-width:706px) 
+{
+  .conquer
+  {
+    flex-direction: column;
+    margin-left:0;
+    margin-right:0;
+    padding:0;
+  }
+  .img{
+    width: 100vw;
+    padding-left: 2rem;
+  }
+  .work >p{
+    text-align: center;
+    color: lightgray;
+  }
+  .world
+  {
+    display: flex;
+    flex-direction:column;
+    width: 800vw;
+    padding: 2rem;
+  }
+
+  .world-text
+  {
+    line-height:1.5rem;
+  }
+}
+@media screen and (max-width:678px){
+  .header-centre>h1{
+    font-size: 25px; 
+  }
+  .header-centre>p{
+    font-size: 12px;
+  }
+  .all{
+    border-radius: 0%;
+    background-color: maroon;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10%;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    image-resolution: 20px;
+    justify-content: center;
+  }
+  .pic1{
+    width: 100vw ;
+  }
+
+}
+@media screen and (max-width:644px){
+  .work >p{
+    text-align: center;
+    padding: 2rem;
+    color: lightgray;
+  }
+} 
+@media screen and (max-width:630px){
+  .work >p{
+    text-align: center;
+    padding: 2rem;
+    color: lightgray;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    image-resolution: 20px;
+    justify-content: center;
+    
+    
+  }
+  .pic1{
+    width: 100vw ;
+  }
+} 
+
+
 @media screen and (max-width: 500px) {
+  
   .contact-container{
     display: flex;
     flex-direction: column;
   }
   .img{
-    width: 400px;
+    width: 100vw;
   }
   .summer{
     width: 30vw;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    image-resolution: 20px;
+    justify-content: center;
+    
+    
+  }
+  .pic1{
+    width: 100vw ;
   }
   
 }
 @media screen and (max-width: 400px) {
   .img{
     margin: 0%;
-    width: 150px;
+    width: 30vw;
     
   }
   .buttons{
@@ -591,27 +893,67 @@
   .Header{
     height: 300px;
   }
+  .header-centre >h1{
+      font-size: 20px;
+  }
   .header-centre >button{
     width: 100px;
-    height: 50px;
+    height: 40px;
     font-size: 10px;
     font-weight: bold;
+    
   }
-  
-  
   .contact-container{
     gap: 0rem;
     flex-direction: column;
   }
   .img{
-    width: 350px;
+    width: 100vw;
   }
   .buttons{
     gap: 20px;
   }
+  .row{
+    display: flex;
+    flex-direction: column;
+    image-resolution: 20px;
+    justify-content: center;
+    
+    
+  }
+  .pic1{
+    width: 100vw ;
+  }
 
 }
-
+@media screen and (max-width: 414px){
+  /* *{
+    border: 1px solid red;
+  } */
+  .img{
+    width: 100vw;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    image-resolution: 20px;
+    justify-content: center;
+    
+    
+  }
+  .pic1{
+    width: 100vw ;
+  }
+}
+@media screen and (max-width: 349px){
+  *{
+    border: 1px solid red;
+  }
+  .Header{
+    width: 20rem;
+  }
+  
+}
 
 @media screen and (max-width:360px){
   *{
@@ -623,17 +965,17 @@
     width: 360px;
   }
   .header-centre >h1{
-    font-size: 20px;
+    font-size: 10px;
+    padding-top: 1rem;
   }
   .header-centre >p{
+    padding-top: 0;
     width: 300px ;
-    height: 40px;
     font-size: 10px;
-    
     word-wrap: break-word;
     display: flex;
     text-align: center;
-    padding:3%
+    /* padding:3% */
 
   }
 
@@ -644,30 +986,38 @@
   color: white;
   text-align: center;
   font-size: 8px;
-  padding: 10px;
+  /* padding-top: 10px; */
   font-family: sans-serif;
   width: 100px;
   height: 30px;
   }
   .world >h2{
-    font-size: 18px;
-    width: 310px;
+    font-size: 20px;
+    width: 80vw;
     margin: 15px;
+    margin-bottom: 5px;
   }
   .world >h4{
-    margin: 15px;
+    margin-top: 5px;
+    margin-left: 15px;
   }
-  .world >p{
-    width: 360px;
-    padding-bottom: 10px;
-    margin: 15px;
-    justify-content: center;
+  .world-text{
+    /* border: 1px solid red; */
+    width: 70vw;
+    padding: 1rem;
+    
   }
   .world >button{
     width: 120px;
     padding: 20px;
     margin-left: 16px;
   } 
+  .work{
+    padding: 0;
+  }
+  .conquer{
+    padding-top: 0;
+  }
   .row{
     display: flex;
     flex-direction: column;
@@ -677,18 +1027,6 @@
     width: 500px;
     
   }
-  /* .buttons{
-    display: flex;
-    width: 100%;
-    padding-left: 1%;
-    background-color: white;
-    gap: 20px;
-    
-  }
-  .summer{
-    background-color: white;
-  } */
-
   .header-right{
     display: none;
   }
@@ -701,13 +1039,14 @@
     font-size: 20px;
     /* border: 1px solid red; */
     justify-content: space-between;
-    /* margin-top: 10%; */
-    /* display: inline; */
+    
   }
+
   .fas {
     margin-top: 5px;
     font-size: 30px;
   }
+
   .header-centre >h1{
     font-size: 15px;
     font-family: sans-serif;
@@ -731,10 +1070,8 @@
   text-align: center; 
   }
   .img{
-    width: 340px;
-    height: 300px;
-    margin: 1px;
-    padding-left: 4%;
+    width: 100vw;
+    padding-left: 3rem;
   }
 
 .work2 >h1{
@@ -788,7 +1125,7 @@
 }
 .slidesfades{
   width: 360px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* margin-top: 5%; */
   
 }
